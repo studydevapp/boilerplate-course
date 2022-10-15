@@ -1,0 +1,21 @@
+{
+  "name": "studydev-course",
+  "homepage": "study.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "webpack --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@studydev/sdk": "^2.8.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
