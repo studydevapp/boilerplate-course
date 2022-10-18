@@ -6,13 +6,13 @@
   "main": "src/index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "webpack --watch"
+    "deploy": "env COURSE_KEY=secretkey webpack --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@studydev/sdk": "^2.11.0"
+    "@studydev/sdk": "^2.22.0"
   },
   "devDependencies": {
     "ts-loader": "^9.4.1",
