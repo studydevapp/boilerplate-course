@@ -31,5 +31,8 @@ module.exports = () => {
         resolve: {
             extensions: ['.ts', '.tsx', '.js']
         },
+        externals: {
+            sqlite3: 'commonjs sqlite3'
+        }
     }
 };
