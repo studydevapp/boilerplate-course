@@ -6,5 +6,6 @@
   "plan": "free",
   "reward": 1500,
   "difficulty": 2,
-  "active": true
+  "active": true,
+  "request_features": []
 }

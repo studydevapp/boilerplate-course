@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@studydev/sdk": "^2.24.0"
+    "@studydev/sdk": "^2.26.0"
   },
   "devDependencies": {
     "ts-loader": "^9.4.1",

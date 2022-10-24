@@ -1,17 +1,11 @@
 # StudyDev Boilerplate Course
 
 ## Add sql support to tasks
-* npm i -s sqlite sqlite3
-* init db in task:
+* add feature: db_postgres
+* example:
 ```javascript
 override async onStart() {
-    this.db = await sqlite.open({filename: ':memory:', driver: sqlite3.Database})
-    // add init db queries here
+    await this.course.features.db.execute(...)
     return super.onStart();
-}
-
-override async onStop() {
-    await this.db.close()
-    await super.onStop();
 }
 ```
