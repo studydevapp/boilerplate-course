@@ -7,5 +7,27 @@
   "reward": 1500,
   "difficulty": 2,
   "active": true,
-  "request_features": []
+  "request_features": [],
+  "text": {
+    "de": {
+      "title": "DeCourseTitle",
+      "description": "DeCourseDesc",
+      "tasks": [
+        {
+          "title": "Task1",
+          "content": "Task1Content"
+        }
+      ]
+    },
+    "en": {
+      "title": "EnCourseTitle",
+      "description": "EnCourseDesc",
+      "tasks": [
+        {
+          "title": "Task1",
+          "content": "Task1Content"
+        }
+      ]
+    }
+  }
 }

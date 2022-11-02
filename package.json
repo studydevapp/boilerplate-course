@@ -5,19 +5,17 @@
   "description": "",
   "main": "src/index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "env COURSE_KEY=secretkey webpack --watch"
+    "local": "env STUDYDEV_API=http://localhost:4200 COURSE_KEY=secretkey WATCH=true node ./node_modules/@studydev/sdk/src/cli.js",
+    "test": "env COURSE_KEY=secretkey WATCH=true node ./node_modules/@studydev/sdk/src/cli.js",
+    "deploy": "env COURSE_KEY=secretkey node ./node_modules/@studydev/sdk/src/cli.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@studydev/sdk": "^2.26.0"
+    "@studydev/sdk": "^2.28.0"
   },
   "devDependencies": {
-    "ts-loader": "^9.4.1",
-    "typescript": "^4.8.4",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "typescript": "^4.8.4"
   }
 }
