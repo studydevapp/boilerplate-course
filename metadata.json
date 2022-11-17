@@ -1,6 +1,4 @@
 {
-  "title": "",
-  "description": "",
   "slug": "",
   "topic": "javascript",
   "plan": "free",
@@ -10,22 +8,22 @@
   "request_features": [],
   "text": {
     "de": {
-      "title": "DeCourseTitle",
-      "description": "DeCourseDesc",
+      "title": "",
+      "description": "",
       "tasks": [
         {
           "title": "Task1",
-          "content": "Task1Content"
+          "content": ""
         }
       ]
     },
     "en": {
-      "title": "EnCourseTitle",
-      "description": "EnCourseDesc",
+      "title": "",
+      "description": "",
       "tasks": [
         {
           "title": "Task1",
-          "content": "Task1Content"
+          "content": ""
         }
       ]
     }
