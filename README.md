@@ -1,16 +1,15 @@
-# Tasks
+# Boilerplate Course
 
 
-## Breaking Changes
-
-1. move text translation to metadata.json
-2. move assets (including thumbnail.png) into /assets folder
-3. Using esbuild instead of webpack
+## Course Editor
+Please use the [course editor](https://github.com/studydevapp/course-editor) to edit courses. This uses this boilerplate code as a template.
 
 ## WebTask
+
 Type definition for express: `npm i --save-dev @types/express`
+
 ```typescript
-import { WebTask } from "@studydev/sdk";
+import {WebTask} from "@studydev/sdk";
 
 export default class Task extends WebTask {
     constructor() {
@@ -24,7 +23,7 @@ export default class Task extends WebTask {
 ## RunCodeTask
 
 ```typescript
-import { RunCodeTask } from "@studydev/sdk";
+import {RunCodeTask} from "@studydev/sdk";
 
 export default class Task extends RunCodeTask {
     constructor() {
@@ -36,7 +35,7 @@ export default class Task extends RunCodeTask {
 ## RunFunctionTask
 
 ```typescript
-import { RunFunctionTask } from "@studydev/sdk";
+import {RunFunctionTask} from "@studydev/sdk";
 
 export default class Task extends RunFunctionTask {
     constructor() {
@@ -46,9 +45,9 @@ export default class Task extends RunFunctionTask {
         }, {
             name: 'checkAge',
             checks: [
-                { args: [20], expect: false },
-                { args: [18], expect: true },
-                { args: [0], expect: false }
+                {args: [20], expect: false},
+                {args: [18], expect: true},
+                {args: [0], expect: false}
             ]
         })
     }
@@ -58,10 +57,21 @@ export default class Task extends RunFunctionTask {
 ## TextTask
 
 ```typescript
-import { TextOnlyTask } from "@studydev/sdk";
+import {TextOnlyTask} from "@studydev/sdk";
 
 export default class Task extends TextOnlyTask {
 
+}
+```
+
+## Metadata
+
+Syntax for metadata.text.[lang].tasks.[index]
+
+```json
+{
+  "title": "Task1",
+  "content": ""
 }
 ```
 
@@ -71,7 +81,10 @@ export default class Task extends TextOnlyTask {
 * example:
 
 ```typescript
-override async onStart(){
+override
+async
+onStart()
+{
     await this.course.features.db.execute(...)
     return super.onStart();
 }
